@@ -2,34 +2,74 @@
     margin: 0;
     padding: 0;
 }
-body{
-    
-}
 nav{
     height: 46px;
     display: flex;
-    background-color: black;
+    background-color: rgba(16, 16, 98, 1) ;
 }
-nav ul{
+nav div{
     display: flex;
-}
-nav ul li{
-    padding-left: 28px;
-    padding-top: 4px;
+    padding-left: 20px;
+    padding-top: 1px;
     list-style: none;
     font-size: 24px;
 }
-nav ul li a{
+nav div a{
     color: white;
     text-decoration: none;
 }
+.Cdropbtn {
+    background-color: rgba(16, 16, 98, 1) ;
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 8px 43px;
+}
+  
+.Cdropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.Cdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(16, 16, 98, 1) ;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.Cdropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+.Cdropdown-content a:hover {
+    color: white;
+    padding: 12px 14px;
+    text-decoration: underline;
+    display: block;
+    font-size: 22px;
+}
+  
+.Cdropdown-content a:hover {background-color: rgba(16, 16, 98, 1) ;}
+  
+.Cdropdown:hover .Cdropdown-content {display: block;}
+  
+.Cdropdown:hover .Cdropbtn {background-color: rgba(16, 16, 98, 1) ;}
+
 #logo{
     height: 39px;
+    /* filter: hue-rotate(147deg); */
+    border-radius: 3px;
 }
 .search input{
     width: 401px;
     height: 34px;
-    border: 2px solid #03519e;
+    border: 2px solid rgb(107, 107, 246) ;
     border-radius: 10px;
     margin: 4px 45px;
     text-align: center;
@@ -41,15 +81,15 @@ nav ul li a{
   'GRAD' 0,
   'opsz' 48
 }
-button{
-   position: absolute;
+.searchbtn{
+   position: fixed;
     right: 498px;
-    top: 7px;
-    background-color: #03519e;
+    top: 8px;
+    background-color: rgb(107, 107, 246);
     padding: 2px;
     border-radius: 6px;
 }
-span{
+.cart{
     color: white;
     position: absolute;
     right: 18px;
@@ -61,4 +101,22 @@ pre{
     font-size: 18px;
     font-weight: bold;
     margin: 11px 0px;
+}
+.main{
+    display: flex;
+    position: absolute;
+    top: 235px;
+}
+.DEALS{
+    width: 100vw;
+    /* filter: hue-rotate(303deg); */
+    height: 248px;
+    margin-top: 1px;
+}
+.showcasetop{
+    border: 1px solid rgb(107, 107, 246);
+    height: 294px;
+    width: 307px;
+    margin: 66px 8px;
+    padding: 6px 0px;
 }
