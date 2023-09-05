@@ -82,18 +82,22 @@ nav div a{
   'opsz' 48
 }
 .searchbtn{
-   position: fixed;
-    right: 498px;
+    position: relative;
+    right: 81px;
     top: 8px;
+    height: 33px;
     background-color: rgb(107, 107, 246);
     padding: 2px;
     border-radius: 6px;
 }
 .cart{
     color: white;
-    position: absolute;
-    right: 18px;
+    position: relative;
+    right: -16px;
     top: 6px;
+}
+.cart:hover{
+    cursor: pointer;
 }
 pre{
     display: flex;
@@ -102,21 +106,63 @@ pre{
     font-weight: bold;
     margin: 11px 0px;
 }
-.main{
+pre:hover{
+    cursor: pointer;
+}
+main{
+    background-color: gainsboro;
+}
+.showcaserow1{
     display: flex;
-    position: absolute;
-    top: 235px;
+    position: relative;
+    bottom: 44px;
+}
+.showcaserow2{
+    display: flex;
+    position: relative;
+    bottom: 144px;
 }
 .DEALS{
     width: 100vw;
     /* filter: hue-rotate(303deg); */
-    height: 248px;
+    height: 254px;
     margin-top: 1px;
 }
+span img{
+    height: 250px;
+    width: 264px;
+    padding: 10px 0px;
+    transition: all ease 0.5s;
+}
+span p{
+    font-size: 22px;
+    color: black;
+    position: relative;
+    right: -100px;
+}
+.showcasetop a{
+    text-decoration: none;
+}
 .showcasetop{
-    border: 1px solid rgb(107, 107, 246);
+    /* border: 1px solid rgb(107, 107, 246); */
     height: 294px;
-    width: 307px;
-    margin: 66px 8px;
+    width: 300px;
+    margin: 66px 24px;
     padding: 6px 0px;
+    overflow: hidden;
+    background-color: white;
+}
+.showcasetop:hover img{
+    scale: 1.1;
+}
+.showcasebottom{
+    /* border: 1px solid rgb(107, 107, 246); */
+    height: 294px;
+    width: 300px;
+    margin: 66px 24px;
+    padding: 6px 0px;
+    overflow: hidden;
+}
+.showcasebottom:hover img{
+    scale: 1.1;
 }
