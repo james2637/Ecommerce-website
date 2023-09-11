@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+   /* overflow-y: hidden; Hide vertical scrollbar */
+   overflow-x: hidden; /* Hide horizontal scrollbar */
+}
 nav{
     height: 46px;
     display: flex;
@@ -99,7 +103,7 @@ nav div a{
 .cart:hover{
     cursor: pointer;
 }
-pre{
+.rightnav pre{
     display: flex;
     color: white;
     font-size: 18px;
@@ -111,6 +115,7 @@ pre:hover{
 }
 main{
     background-color: gainsboro;
+    max-height: 1200px;
 }
 .showcaserow1{
     display: flex;
@@ -129,9 +134,9 @@ main{
     margin-top: 1px;
 }
 span img{
-    height: 250px;
-    width: 264px;
-    padding: 10px 0px;
+    height: 228px;
+    width: 273px;
+    padding: 0px 10px;
     transition: all ease 0.5s;
 }
 span p{
@@ -145,9 +150,9 @@ span p{
 }
 .showcasetop{
     /* border: 1px solid rgb(107, 107, 246); */
-    height: 294px;
-    width: 300px;
-    margin: 66px 24px;
+    height: 250px;
+    width: 297px;
+    margin: 58px 10px;
     padding: 6px 0px;
     overflow: hidden;
     background-color: white;
@@ -157,12 +162,70 @@ span p{
 }
 .showcasebottom{
     /* border: 1px solid rgb(107, 107, 246); */
-    height: 294px;
-    width: 300px;
-    margin: 66px 24px;
+    /* height: 260px; */
+    /* width: 265px; */
+    margin: 58px 10px;
     padding: 6px 0px;
     overflow: hidden;
 }
 .showcasebottom:hover img{
     scale: 1.1;
+}
+.featureitems{
+    width: 96vw;
+    background-color: white;
+    height: 300px;
+    margin: 18px;
+    position: relative;
+    top: -185px;
+}
+.featureitems p{
+    font-size: 24px;
+    color: rgba(16, 16, 98, 1);
+    padding: 10px 42px;
+}
+.featureitems img{
+    height: 280px;
+    width: 96vw;
+    cursor: pointer;
+}
+footer{
+    background-color: rgba(16, 16, 98, 1);
+    width: 100vw;
+    height: 200px;
+    position: relative;
+    top: -14px;
+}
+footer img{
+    height: 28px;
+    padding: 24px 348px;
+}
+footer p{
+    font-size: 24px;
+    color: white;
+    position: relative;
+    top: -57px;
+    left: 420px;
+}
+.pre1{
+    position: relative;
+    top: -114px;
+    left: 38px;
+    color: white;
+    font-size: 18px;
+}
+.pre2{
+    position: relative;
+    top: -249px;
+    left: 1003px;
+    color: white;
+    font-size: 18px;
+}
+.pre3{
+    position: relative;
+    top: 16px;
+    left: 323px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
